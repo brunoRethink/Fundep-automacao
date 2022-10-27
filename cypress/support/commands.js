@@ -33,3 +33,18 @@ Cypress.Commands.add('login', () =>{
     cy.get('#textinput-2').type(user.senha)
     cy.contains('button', 'Login').click()
 })
+
+Cypress.Commands.add('saveComponent', () =>{
+    cy.get('.gFLWth').click()
+    cy.get('.lozLyH > .sc-kdneuM').should('have.text', 'Saved')
+})
+
+Cypress.Commands.add('publishComponent', () =>{
+    if (cy.get('.hxJchj').should('have.text', 'Publish')) cy.get('.hxJchj').click()
+})
+
+Cypress.Commands.add('buildProject', () =>{
+    cy.get(':nth-child(2) > .sc-heudyb > .sc-cSyqtw').click()
+    cy.get('.sc-eCImPb').click()
+    cy.get('.lozLyH > .sc-kdneuM').should('have.text', 'Build has been triggered successfully')
+})
