@@ -24,5 +24,6 @@ exports.el = {
     btnSingleParagraph: ':nth-child(3) > .sc-gsDKAQ > .sc-bUbRBg',
     fieldTitleSingleParagraph: '//*[@id="Conteudo.2.Titulo"]',
     fieldSubTitleParagraph: '//*[@id="Conteudo.2.Subtitulo"]',
-    fieldContentSingleParagraph: ':nth-child(2) > .sc-eDtABA > .sc-kiwPtn > .sc-dSfdvi > .ivUSIR > .sc-fpGCtG > .sc-igcPbY > .CodeMirror > .CodeMirror-scroll'
+    fieldContentSingleParagraph: ':nth-child(2) > .sc-eDtABA > .sc-kiwPtn > .sc-dSfdvi > .ivUSIR > .sc-fpGCtG > .sc-igcPbY > .CodeMirror > .CodeMirror-scroll',
+    fieldAudio: ':nth-child(3) > .sc-eDtABA > .sc-kiwPtn > .sc-dSfdvi > .ivUSIR > .sc-fpGCtG > .sc-igcPbY > .CodeMirror > .CodeMirror-scroll'
 }
