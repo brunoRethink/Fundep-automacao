@@ -1,7 +1,7 @@
 /// <reference types="cypress-xpath" />
 import { el } from './elements.js'
 
-class AgregadoraPage {
+class CandidatoPage {
     acessComponent() {
         cy.get(el.collectionTypeCandidate).click()
     }
@@ -16,4 +16,4 @@ class AgregadoraPage {
     }
 }
 
-export default new AgregadoraPage()
+export default new CandidatoPage()
