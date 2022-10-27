@@ -13,5 +13,16 @@ exports.el = {
     btnCreateNewEntry: '.dGJFGM > .sc-eCImPb',
     btnConfirmImgEvent: '.hEGTUX > :nth-child(2) > .sc-eCImPb',
     btnCreateContent: '.sc-dLPVTQ',
-    btnConfirmImgBanner: '.hEGTUX > :nth-child(2) > .sc-eCImPb'
+    btnConfirmImgBanner: '.hEGTUX > :nth-child(2) > .sc-eCImPb',
+    
+    // Paragrafo com fundo
+    fieldParagraphWithBackground: '.sc-ftoIWw > :nth-child(2) > .sc-gsDKAQ > .sc-bUbRBg',
+    fieldContentParagraph: '//*[@id="Conteudo.1.Conteudo"]',
+    fieldTitleParagraph: '//*[@id="Conteudo.1.Titulo"]',
+
+    // Paragrafo simples
+    btnSingleParagraph: ':nth-child(3) > .sc-gsDKAQ > .sc-bUbRBg',
+    fieldTitleSingleParagraph: '//*[@id="Conteudo.2.Titulo"]',
+    fieldSubTitleParagraph: '//*[@id="Conteudo.2.Subtitulo"]',
+    fieldContentSingleParagraph: ':nth-child(2) > .sc-eDtABA > .sc-kiwPtn > .sc-dSfdvi > .ivUSIR > .sc-fpGCtG > .sc-igcPbY > .CodeMirror > .CodeMirror-scroll'
 }

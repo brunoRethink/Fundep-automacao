@@ -2,6 +2,7 @@
 import { el } from './elements.js'
 
 class EventoPage {
+
     acessComponent() {
         cy.xpath(el.collectionTypeEvent).click()
     }
@@ -18,19 +19,30 @@ class EventoPage {
         cy.get(el.selectImgEvent).click()
         cy.get(el.btnConfirmImgEvent).click()
     }
-
-    addContentEvent() {
-        cy.get(el.btnCreateContent).click()
-    }
     
     addBanner() {
+        cy.get(el.btnCreateContent).click()
         cy.get(el.selectBanner).click()
         cy.xpath(el.fieldTitleBanner).type('Titulo do banner criado')
         cy.xpath(el.fieldSubTitleBanner).type('Subtitulo do banner criado')
         cy.get(el.fieldImgBanner).click()
         cy.get(el.selectImgBanner).click()
         cy.get(el.btnConfirmImgBanner).click()
+    }
 
+    addParagraphWithBackground() {
+        cy.get(el.btnCreateContent).click()
+        cy.get(el.fieldParagraphWithBackground).click()
+        cy.xpath(el.fieldContentParagraph).type('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+        cy.xpath(el.fieldTitleParagraph).type('titulo do paragrafo criado')
+    }
+
+    addSingleParagraph() {
+        cy.get(el.btnCreateContent).click()
+        cy.get(el.btnSingleParagraph).click()
+        cy.xpath(el.fieldTitleSingleParagraph).type('Novo titulo do paragrafo simples')
+        cy.xpath(el.fieldSubTitleParagraph).type('Novo subtitulo criado')
+        cy.get(el.fieldContentSingleParagraph).type('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
     }
 }
 
