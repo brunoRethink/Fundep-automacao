@@ -48,3 +48,7 @@ Cypress.Commands.add('buildProject', () =>{
     cy.get('.sc-eCImPb').click()
     cy.get('.lozLyH > .sc-kdneuM').should('have.text', 'Build has been triggered successfully')
 })
+
+Cypress.Commands.add('acessContentManager', () =>{
+    cy.get('.fCQWpQ > :nth-child(1) > .sc-heudyb > .sc-cSyqtw').click()
+})

@@ -1,5 +1,4 @@
 exports.el = {
-    acessContentManager: '//*[@id="app"]/div[2]/div/nav/div[1]/ul/li[1]/a/span',
     acessAggregator: '#subnav-list-4 > :nth-child(1) > .sc-gwNMUz',
     btnCreateNewEntry: '.dGJFGM > .sc-eCImPb',
     addTab:'//*[@id="main-content"]/div[2]/div/div[1]/div/div/div/div/div[1]/div/div/div/div[2]/button',

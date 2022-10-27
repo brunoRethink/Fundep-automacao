@@ -4,6 +4,7 @@ import AgregadoraPage from "../../../pages/strapi/collection_types/agregadora/ag
 describe('Should access the aggregator collection types', () => {
     beforeEach(() => {
         cy.login()
+        cy.acessContentManager()
     })
     it('And create a content for aggregator', () => {
         AgregadoraPage.acessComponent()

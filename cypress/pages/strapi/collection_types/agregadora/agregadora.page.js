@@ -3,7 +3,6 @@ import { el } from './elements.js'
 
 class AgregadoraPage {
     acessComponent() {
-        cy.xpath(el.acessContentManager).click()
         cy.get(el.acessAggregator).click()
     }
 
