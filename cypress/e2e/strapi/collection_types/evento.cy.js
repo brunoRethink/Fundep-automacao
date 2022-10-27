@@ -14,8 +14,8 @@ describe('Should access the event collection types', () => {
         EventPage.addParagraphWithBackground()
         EventPage.addSingleParagraph()
 
-        // cy.saveComponent()
-        // cy.publishComponent()
-        // cy.buildProject()
+        cy.saveComponent()
+        cy.publishComponent()
+        cy.buildProject()
     });
 });
