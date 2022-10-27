@@ -1,0 +1,24 @@
+{
+  "name": "Fundep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^10.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoRethink/Fundep-automacao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoRethink/Fundep-automacao/issues"
+  },
+  "homepage": "https://github.com/brunoRethink/Fundep-automacao#readme"
+}
