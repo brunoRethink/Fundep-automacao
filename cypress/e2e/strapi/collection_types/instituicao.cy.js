@@ -11,8 +11,8 @@ describe('Should access the institution collection types', () => {
         InstitutionPage.clickOnCreateFormButton()
         InstitutionPage.createInstitution()
         
-        // cy.saveComponent()
-        // cy.publishComponent()
-        // cy.buildProject()
+        cy.saveComponent()
+        cy.publishComponent()
+        cy.buildProject()
     });
 });
