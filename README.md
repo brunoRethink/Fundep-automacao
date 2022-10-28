@@ -5,7 +5,6 @@
 > Status: Developing 🚧
 ### Responsible for the project:
 - Bruno Costa - QA Lead 
-- Jonatas Passos - QA Junior
 
 ## Technology
 * Cypress 10.11
