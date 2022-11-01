@@ -9,7 +9,7 @@ exports.el = {
     fieldTitleBanner: '//*[@id="Conteudo.0.Titulo"]',
     fieldSubTitleBanner: '//*[@id="Conteudo.0.Subtitulo"]',
     btnSelectImgBanner: '.sc-eMHfQD > .sc-dvQaRk',
-    selectImgCheck: '[tabindex="0"][aria-labelledby="card-29-title"] > .sc-czvZiG > .bOaPhA > .sc-cBIieI',
+    selectImgCheck: '[tabindex="0"][aria-labelledby="card-24-title"] > .sc-czvZiG > .bOaPhA > .sc-cBIieI',
 
     // Banner com botao
     btnBannerButton: '.sc-ftoIWw > :nth-child(2) > .sc-gsDKAQ',
@@ -25,13 +25,13 @@ exports.el = {
     selectGallery: '.sc-eMHfQD > .sc-dvQaRk',
     selectImg1: '//*[@id="tabgroup-7-0-tabpanel"]/div/div[1]/div[2]/div/article[8]/div[1]/div[1]/input',
     selectImg2: '//*[@id="tabgroup-7-0-tabpanel"]/div/div[1]/div[2]/div/article[9]/div[1]/div[1]/input',
-    selectImg3: '//*[@id="tabgroup-7-0-tabpanel"]/div/div[1]/div[2]/div/article[10]/div[1]/div[1]/input',
+    selectImg3: '[tabindex="0"][aria-labelledby="card-61-title"] > .sc-czvZiG > .bOaPhA > .sc-cBIieI',
 
     // Paragrafo com banner
     btnParagraphWithBanner: ':nth-child(4) > .sc-gsDKAQ > .sc-bUbRBg',
     contentParagraphWithBanner: '//*[@id="Conteudo.3.Conteudo"]',
     btnImgParagraphWithBanner: '//*[@id="carouselinput-37"]/div/section/div/div/button',
-    selectParagraphWithBanner: '[tabindex="0"][aria-labelledby="card-109-title"] > .sc-czvZiG > .bOaPhA > .sc-cBIieI',
+    selectParagraphWithBanner: '[tabindex="0"][aria-labelledby="card-96-title"] > .sc-czvZiG > .bOaPhA > .sc-cBIieI',
     titleParagraphWithBanner: '//*[@id="Conteudo.3.Titulo"]',
 
     // Paragrafo com fundo

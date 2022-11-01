@@ -7,6 +7,7 @@ describe('Should access the institution collection types', () => {
         cy.login()
         cy.acessContentManager()
     })
+
     it('And create a content for institution', () => {
         NewsPage.acessComponent()
         NewsPage.clickOnCreateNewsButton()
@@ -22,5 +23,7 @@ describe('Should access the institution collection types', () => {
         cy.saveComponent()
         cy.publishComponent()
         cy.buildProject()
+        cy.logout()
+
     });
 });

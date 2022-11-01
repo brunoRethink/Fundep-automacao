@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add('login', () =>{
-    cy.visit('admin/auth/login')
+    cy.visit('http://150.164.30.91:5000/admin/auth/login')
     const user = {
         email: 'fabio@gmail.com',
         senha: 'Passw0rd'
@@ -32,6 +32,17 @@ Cypress.Commands.add('login', () =>{
     cy.get('#textinput-1').type(user.email)
     cy.get('#textinput-2').type(user.senha)
     cy.contains('button', 'Login').click()
+})
+
+Cypress.Commands.add('logout',  () => {
+    cy.get('#main-nav-user-button > .rhTnq', {timeout: 10000}).click()
+    cy.get('.cCWvcQ', {timeout: 10000}).click()
+    cy.get('.uEkCF > .sc-bvFjSx', {timeout: 10000}).should('be.be.visible')
+
+})
+
+Cypress.Commands.add('portal', () =>{
+    cy.visit('http://150.164.30.91:3000/')
 })
 
 Cypress.Commands.add('saveComponent', () =>{

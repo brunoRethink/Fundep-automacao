@@ -6,6 +6,7 @@ describe('Should access the project collection types', () => {
         cy.login()
         cy.acessContentManager()
     })
+
     it('And create a content for project', () => {
         ProjectPage.acessComponent()
         ProjectPage.clickOnCreateProjetctButton()
@@ -17,5 +18,6 @@ describe('Should access the project collection types', () => {
         cy.saveComponent()
         cy.publishComponent()
         cy.buildProject()
+        cy.logout()
     });
 });

@@ -6,6 +6,11 @@ describe('Should access the event collection types', () => {
         cy.login()
         cy.acessContentManager()
     })
+
+    afterEach(() => {
+        cy.logout()
+    })
+    
     it('And create a content for event', () => {
         EventPage.acessComponent()
         EventPage.clickOnCreateEventButton()

@@ -6,6 +6,11 @@ describe('Should access the institution collection types', () => {
         cy.login()
         cy.acessContentManager()
     })
+
+    afterEach(() => {
+        cy.logout()
+    })
+    
     it('And create a content for institution', () => {
         InstitutionPage.acessComponent()
         InstitutionPage.clickOnCreateFormButton()

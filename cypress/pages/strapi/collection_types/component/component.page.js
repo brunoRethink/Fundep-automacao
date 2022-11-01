@@ -31,7 +31,7 @@ class AllComponentsPage {
         cy.get(el.selectGallery).click()
         cy.xpath(el.selectImg1).click()
         cy.xpath(el.selectImg2).click()
-        cy.xpath(el.selectImg3).click()
+        cy.get(el.selectImg3).click()
         cy.get(el.btnConfirmImg).click()
     }
 

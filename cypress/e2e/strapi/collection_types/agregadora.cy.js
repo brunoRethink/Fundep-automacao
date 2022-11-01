@@ -4,17 +4,23 @@ import AgregadoraPage from "../../../pages/strapi/collection_types/agregadora/ag
 describe('Should access the aggregator collection types', () => {
     beforeEach(() => {
         cy.login()
-        cy.acessContentManager()
+        cy.acessContentManager()    
     })
+
+    afterEach(() => {
+        cy.logout()
+    })
+    
     it('And create a content for aggregator', () => {
         AgregadoraPage.acessComponent()
         AgregadoraPage.clickOnCreateAggregatorButton()
         AgregadoraPage.createNewContentAggregator()
         AgregadoraPage.fillInInformationTab()
         AgregadoraPage.fillInInformationAggregator()
-
+        
         cy.saveComponent()
         cy.publishComponent()
         cy.buildProject()
+        
     });
 });
