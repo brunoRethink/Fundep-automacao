@@ -16,7 +16,7 @@ class EventoPage {
         cy.get(el.fieldDateEvent).click()
         cy.get(el.selectDataEvent).click()
         cy.get(el.fieldImgEvent).click()
-        cy.get(el.selectImgEvent).click()
+        cy.xpath(el.selectImgEvent).click()
         cy.get(el.btnConfirmImgEvent).click()
     }
     

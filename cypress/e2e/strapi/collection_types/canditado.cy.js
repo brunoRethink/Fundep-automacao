@@ -6,6 +6,11 @@ describe('Should access the candidate collection types', () => {
         cy.login()
         cy.acessContentManager()
     })
+
+    afterEach(() => {
+        cy.logout()
+    })
+    
     it('And create a content for candidate', () => {
         CandidatoPage.acessComponent()
         CandidatoPage.clickOnCreateCandidateButton()

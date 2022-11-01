@@ -1,5 +1,5 @@
 /// <reference types="cypress-xpath" />
-import { el } from './element'
+import { el } from './elements'
 
 class FormPage {
 

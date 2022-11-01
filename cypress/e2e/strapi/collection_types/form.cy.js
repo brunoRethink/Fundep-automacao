@@ -6,6 +6,11 @@ describe('Should access the form collection types', () => {
         cy.login()
         cy.acessContentManager()
     })
+
+    afterEach(() => {
+        cy.logout()
+    })
+    
     it('And create a content for form', () => {
         FormPage.acessComponent()
         FormPage.clickOnCreateFormButton()
