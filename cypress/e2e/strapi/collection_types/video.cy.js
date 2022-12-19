@@ -1,22 +1,22 @@
-/// <reference types="cypress-xpath" />
-import Video from "../../../pages/strapi/collection_types/video/video.page"
+// /// <reference types="cypress-xpath" />
+// import Video from "../../../pages/strapi/collection_types/video/video.page"
 
-describe('Should access the video collection types', () => {
-    beforeEach(() => {
-        cy.login()
-        cy.acessContentManager()
-    })
+// describe('Should access the video collection types', () => {
+//     beforeEach(() => {
+//         cy.login()
+//         cy.acessContentManager()
+//     })
 
-    // afterEach(() => {
-    //     cy.logout()
-    // })
+//     // afterEach(() => {
+//     //     cy.logout()
+//     // })
     
-    it('And create a content for video', () => {
-        Video.acessComponent()
-        Video.clickOnCreateVideotButton()
+//     it('And create a content for video', () => {
+//         Video.acessComponent()
+//         Video.clickOnCreateVideotButton()
         
-        // cy.saveComponent()
-        // cy.publishComponent()
-        // cy.buildProject()
-    });
-});
+//         // cy.saveComponent()
+//         // cy.publishComponent()
+//         // cy.buildProject()
+//     });
+// });

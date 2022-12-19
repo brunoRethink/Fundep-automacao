@@ -1,5 +1,5 @@
 /// <reference types="cypress-xpath" />
-import Portal from "./home.page"
+import Portal from "../../pages/portal/home.page.js"
 
 describe('Should access the aggregator collection types', () => {
     beforeEach(() => {

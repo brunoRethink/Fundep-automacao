@@ -24,21 +24,22 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add('login', () =>{
-    cy.visit('http://150.164.30.91:5000/admin/auth/login')
+    cy.visit('http://150.164.30.91:8080/admin/auth/login')
     const user = {
-        email: 'fabio@gmail.com',
-        senha: 'Passw0rd'
+        email: 'fundep@test.com',
+        senha: 'i8c0Y!R71&Ux'
     }
-    cy.get('#textinput-1').type(user.email)
-    cy.get('#textinput-2').type(user.senha)
-    cy.contains('button', 'Login').click()
+        cy.get('#textinput-1').type(user.email)
+        cy.get('#textinput-2').type(user.senha)
+        cy.contains('button', 'Login').click()
+        cy.clearCookies()
 })
 
-Cypress.Commands.add('logout',  () => {
-    cy.get('#main-nav-user-button > .rhTnq', {timeout: 10000}).click()
-    cy.get('.cCWvcQ', {timeout: 10000}).click()
-    cy.get('.uEkCF > .sc-bvFjSx', {timeout: 10000}).should('be.be.visible')
-
+Cypress.Commands.add('logout', () =>{
+    if (cy.get('#main-nav-user-button > .ezFBXj > .sc-OVzLa').should('be.visible')) {
+        cy.get('#main-nav-user-button > .ezFBXj > .sc-OVzLa', {timeout: 5000}).click()
+        cy.get('[logout="logout"]').click()
+    }
 })
 
 Cypress.Commands.add('portal', () =>{
@@ -46,20 +47,20 @@ Cypress.Commands.add('portal', () =>{
 })
 
 Cypress.Commands.add('saveComponent', () =>{
-    cy.get('.gFLWth').click()
-    cy.get('.lozLyH > .sc-kdneuM').should('have.text', 'Saved')
+    cy.get("button[type='submit']").click()
+    cy.get('.jXYelc > .sc-PWMHG').should('have.text', 'Saved')
 })
 
 Cypress.Commands.add('publishComponent', () =>{
-    if (cy.get('.hxJchj').should('have.text', 'Publish')) cy.get('.hxJchj').click()
+    if (cy.xpath("(//button[@type='button'])[2]").should('have.text', 'Publish')) cy.xpath("(//button[@type='button'])[2]").click()
 })
 
 Cypress.Commands.add('buildProject', () =>{
-    cy.get(':nth-child(2) > .sc-heudyb > .sc-cSyqtw').click()
+    cy.get(':nth-child(2) > div.sc-fpGCtG > .sc-fpGCtG > :nth-child(3) > .sc-inrDdN > .sc-wAsCI').click()
     cy.get('.sc-eCImPb').click()
     cy.get('.lozLyH > .sc-kdneuM').should('have.text', 'Build has been triggered successfully')
 })
 
 Cypress.Commands.add('acessContentManager', () =>{
-    cy.get('.fCQWpQ > :nth-child(1) > .sc-heudyb > .sc-cSyqtw').click()
+    cy.xpath("//span[text()='Content Manager']").click()
 })
