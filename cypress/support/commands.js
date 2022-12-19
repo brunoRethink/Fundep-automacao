@@ -64,3 +64,7 @@ Cypress.Commands.add('buildProject', () =>{
 Cypress.Commands.add('acessContentManager', () =>{
     cy.xpath("//span[text()='Content Manager']").click()
 })
+
+Cypress.Commands.add('acessMenuFundep', () =>{
+    cy.get(':nth-child(3) > [data-testid="root-trigger--1"]').trigger('mouseover', {force: true})
+})
